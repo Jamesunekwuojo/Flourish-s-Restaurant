@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+.navdiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    position: relative;
+    padding: 10px;
+    height: 50%;
+}
+#Headname{
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 40px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-style: italic;
+    
+}
+#firstimg
+{
+    border-radius: 50%;
+}
+.menudiv{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 60%;
+    
+}
+.spacediv{
+    margin: 10px;
+}
+#p1{
+    font-size: larger;
+
+}
+#p2{
+    font-size: larger;
+
+}
+#p3{
+    font-size: larger;
+
+}
+.bottomdiv{
+    height: 50px;
+    background-color: black;
+}
+.backgrounddiv{
+    height: 90vh;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#mealspictures{
+    height: 90vh;
+    border: 1px solid black;
+    width: 40%;
+    position: absolute;
+    left: 810px;
+    
+
+}
+
+
+
+
+
