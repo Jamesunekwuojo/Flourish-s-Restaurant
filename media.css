@@ -1,0 +1,16 @@
+/*base styles*/
+/*large devices*/
+@media (min-width:1200px) {
+    #p1{
+        width: 60%;
+        height: 20px;
+    }
+    #p2{
+        width: 20%;
+        height: 40px;
+    }
+}
+/*small devices*/
+@media (min-width:771px)and(max-width:991px){
+    
+}

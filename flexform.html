@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #box{
+            background-color: blue;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 50px;
+            width: 200px;
+            height: 20px;
+            /*overflow: auto;*/
+            overflow: scroll;
+            /* You can place the box sizing property here aswell*/ /*box-sizing: content-box;*/
+        }
+        #content{
+            background-color: brown;
+        }
+        /* *(star selector(universal selector)-it makes the property to be applied to all the element in the HTML code)*/
+        /* *{
+            box-sizing: border-box;
+        }*/
+        #fbcontainer{
+           width:400px ; 
+           background-color: blue;
+        }
+        .fb{
+            width: 40%;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: darkorange;
+            box-sizing: border-box;
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+    
+    <div id="box">
+        <div id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cumque nostrum non voluptate repudiandae neque facilis facere veritatis autem molestias, optio consequatur odio aut corporis repellat iusto. Quas, accusantium voluptates! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, nobis consequuntur, recusandae nostrum, quidem numquam totam quibusdam maiores repellat similique inventore molestias quae facilis explicabo minima reprehenderit in ex alias.</div>
+    </div>
+    <div id="fbcontainer">
+        <p class="fb"> RPA is one of the top growing technology in this 21st century</p>
+        <p class="fb">IOT Internet Of Things is no less than RPA in terms of technological growth</p>
+    </div>
+
+
+    
+</body>
+</html>

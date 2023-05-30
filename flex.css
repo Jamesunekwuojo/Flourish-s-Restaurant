@@ -1,0 +1,79 @@
+.maincontainer{
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+.sub-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: blue;
+    list-style-type: none;
+    justify-content:space-around;
+    padding: 15px;
+    font-size: x-large;
+    
+}
+.header1{
+    font-style: italic;
+    color: darkslateblue;
+}
+.mainbody{
+
+    background:linear-gradient(to bottom, #daa520, #bcbea9),
+}
+p{
+    color: blue;
+}
+/* Element with class selectors*/
+body.header1{
+    color: pink;
+
+}
+/* descendant selector it affects all the li elements in the ul tag*/
+ul li{
+    color: rebeccapurple;
+}
+/* Direct(child) selector* it affects only the first element in the ul tag*/
+ul > li {
+    color:#daa520 
+}
+/*pseudo class selectors*/
+ul  a{
+   cursor: pointer;
+}
+a:link, a:visited{
+    text-decoration: dotted;
+    background-color: rgb(224, 19, 47);
+    color: black;
+}
+a:hover, a:active {
+    background-color: aqua;
+    color:blue
+}
+ul a:nth-child(2) {
+    font-size:xx-large;
+}
+div, span{
+    color:green ;
+    text-transform: uppercase;
+}
+/*specificity*/
+/*1st box - style
+2nd box - ID selector
+3rd box - pseudo, class selectors
+4th box - element*/
+/*absolute unit
+pxels(px)*/
+/*Relative unit
+pecentage - in relative to the default font-size of the browser& most browsers
+have a default font-size of 16px
+em - in relative to the default font size of that particular element e,g if a div element
+has a rel. font size of 120% and then a p element in that div has a rel. font size of 2em
+that means the p element will have twice of the size of the div element.*/
+ 
+
+
+
