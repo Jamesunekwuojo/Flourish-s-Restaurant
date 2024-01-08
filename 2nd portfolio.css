@@ -86,12 +86,6 @@ img{
     background-color:rgb(58, 58, 180);
 
 }
-@media screen and ( min-width:720px){
-    .boxdiv{
-        display: flex;
-        flex-direction: row;
-    }
-}
 
 
 

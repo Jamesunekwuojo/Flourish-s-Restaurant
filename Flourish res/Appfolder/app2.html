@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Kingdom To-Do List</h1>
+
+  <input type="text" id="taskInput" class="task-input" placeholder="Enter a task">
+    <div class="button-container">
+  <button onclick="addTask()" class="add-button">Add Task</button> 
+  <button onclick="clearTasks()" class="clear-button">Clear All</button>
+   </div>
+  <ul id="taskList" class="task-list"></ul>
+  <style>
+    body {
+       font-family: Arial, sans-serif;
+       background-color: #f2f2f2;
+       margin: 0;
+       padding: 20px;
+     }
+ 
+     h1 {
+       text-align: center;
+       color: #333;
+     }
+     .task-input {
+       display: block;
+       width: 27%;
+       padding: 10px;
+       font-size: 16px;
+       margin-bottom: 10px;
+     }
+ 
+     .add-button{
+       display: block;
+       border-radius: 20px;
+       width: 7%;
+       padding: 10px;
+       font-size: 16px;
+       background-color: #333;
+       color: #fff;
+       border: none;
+       cursor: pointer;
+     }
+     
+     .clear-button{
+        display: block;
+       width: 7%;
+       padding: 10px;
+       border-radius: 20px;
+       font-size: 16px;
+       background-color: red;
+       color: #fff;
+       border: none;
+       cursor: pointer;
+     }
+
+     .task-list {
+       list-style-type: none;
+       padding: 0;
+     }
+ 
+     .task-item {
+      color: #fff;
+      text-align: center;
+      width: 70px;
+       background-color: black;
+       padding: 10px;
+       margin-bottom: 10px;
+       border-radius: 5px;
+     }
+
+      .button-container {
+      text-align: left;
+    }
+
+    .button-container button {
+      display: inline-block;
+      margin: 0 5px;
+    }
+   
+ </style>
+  <script>
+    // Retrieve tasks from localStorage when the page loads
+    window.onload = function() {
+      var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+      renderTasks(tasks);
+    }
+
+    function addTask() {
+      var input = document.getElementById("taskInput");
+      var task = input.value;
+      input.value = "";
+
+      if (task.trim() !== "") {
+        var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        tasks.push(task);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        renderTasks(tasks);
+      }
+    }
+
+    function renderTasks(tasks) {
+      var taskList = document.getElementById("taskList");
+      taskList.innerHTML = "";
+
+      tasks.forEach(function(task) {
+        var li = document.createElement("li");
+        li.className = "task-item";
+        li.appendChild(document.createTextNode(task));
+        taskList.appendChild(li);
+      });
+    }
+
+    function clearTasks() {
+      localStorage.removeItem("tasks");
+      renderTasks([]);
+    }
+  </script>
+
+
+</body>
+    
+</html>

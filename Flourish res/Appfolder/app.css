@@ -1,0 +1,95 @@
+@media screen and (max-width:720px) {
+    body{
+        width: 100%;
+    }
+}
+.firstdiv{
+    position: absolute;
+    left: 800px;
+    border: 1px solid gray;
+    top: 20px;
+}
+
+
+input{
+    padding: 5px;
+    width: 350px;
+    font-size: large;
+    margin-top: 20px;
+
+}
+form{
+    position: absolute;
+    left: 150px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.add-button{
+    margin-top: 10px;
+    background-color: #0000ff;
+    margin-right: 100px;
+    border-radius:20px;
+    padding: 5px;
+    border: 1px solid wheat;
+    font-size: large;
+}
+.clear-button{
+    margin-top: 20px;
+    background-color: #ff0000;
+    border-radius: 35px;
+    padding: 5px;
+    border: 1px solid wheat;
+    font-size: large;
+    
+}
+button{
+    cursor:pointer ;
+}
+h2{
+    font-variant: small-caps;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkmagenta;
+    
+}
+
+    /*#add-buttontwo{
+        margin-top: 5px;
+        background-color: #0000ff;
+        margin-right: 70px;
+        border-radius: 20px;
+        padding: 5px;
+        border: 1px solid black;
+        
+    }
+    #clear-buttontwo{
+        margin-top: 10px;
+        background-color: #ff0000;
+        border-radius: 35%;
+        padding: 5px;
+        border: 1px solid black;
+        font-size: large;
+        
+    }
+    button{
+        cursor:pointer ;
+    }
+    h2{
+        margin-left: 100px;
+        font-variant: small-caps;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: darkmagenta;
+        
+    }*/
+
+    
+
+
+
+
